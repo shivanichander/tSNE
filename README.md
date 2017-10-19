@@ -4,11 +4,11 @@ We shall be looking at the Python implementation, and to an extent, the Math inv
 
 In machine learning problems, each feature of the elements in a dataset contributes a dimension. So, a dataset with many features is what we refer to as high dimensional data.
 
-By ‘visualising data’, we mean plotting it on a graph, so that we can observe and make inferences or even judge the performance of our model. For visualising on a graph, we need to stick to two (planar graph) or three dimensions, because that is what the human eye processes, unlike computers which can process many dimensions. So, for us to visualise high dimensional data, we need dimensionality reduction techniques.
+By ‘visualising data’, we mean plotting it on a graph, so that we can observe and make inferences or even judge the performance of our model. For visualising on a graph, we need to stick to two (planar graph) or three dimensions, because that is what the human eye processes, unlike computers which can process and work with many dimensions with ease. So, for us to visualise high dimensional data, we need dimensionality reduction techniques, to make the data presentable in a way that is well interpretable by us.
 
 PCA is one such basic dimensionality reduction technique, where we do an orthogonal transformation, so that the resultant components are linearly uncorrelated, orthogonal and maximise the variance.
 
-tSNE is a more powerful technique that is capable of preserving the local structure as well as the global structure of the data. That is, the aim of tSNE is to preserve as much of the significant structure in the high dimensional points as possible, in the low dimensional map.
+**tSNE is a more powerful technique that is capable of preserving the local structure as well as the global structure of the data.** That is, the aim of tSNE is to preserve as much of the significant structure in the high dimensional points as possible, in the low dimensional map.
 
 Before looking at how tSNE achieves this, let’s understand SNE conceptually. For exact mathematical expressions and derivations, refer to the original paper [here](http://jmlr.csail.mit.edu/papers/volume9/vandermaaten08a/vandermaaten08a.pdf).
 
