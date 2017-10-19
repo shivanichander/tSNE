@@ -13,7 +13,7 @@ tSNE is a more powerful technique that is capable of preserving the local struct
 Before looking at how tSNE achieves this, let’s understand SNE conceptually. For exact mathematical expressions and derivations, refer to the original paper [here](http://jmlr.csail.mit.edu/papers/volume9/vandermaaten08a/vandermaaten08a.pdf).
 
 ## SNE (Stochastic Neighbour Embedding):
-Hinton and Roweiss came up with the SNE algorithm that converts high dimensional Euclidean distances between datapoints into conditional probabilities that represent similarities. The similarity between 2 datapoints is the conditional probability that one would pick the other as the neighbour, if neighbours were picked in proportion to their probability density under a Gaussian centred at one of them. So, for nearby points, this similarity is high, and vice versa, that is, similar points will be close by. The similarities are stored in a similarity matrix.
+Hinton and Roweis came up with the SNE algorithm that converts high dimensional Euclidean distances between datapoints into conditional probabilities that represent similarities. The similarity between 2 datapoints is the conditional probability that one would pick the other as the neighbour, if neighbours were picked in proportion to their probability density under a Gaussian centred at one of them. So, for nearby points, this similarity is high, and vice versa, that is, similar points will be close by. The similarities are stored in a similarity matrix.
 
 Likewise, the similarity can be modeled for the low dimensional counterparts too. If the projection from higher to lower dimension is correctly mapped, pairs of original points and their images will have same similarity.
 
@@ -27,7 +27,7 @@ The paper gives a beautiful analogy of the gradient to be similar to the resulta
 So, SNE achieves equilibrium of the springs by attracting two map points if they are far apart while their data points are close and repelling if they are nearby while their corresponding data points are dissimilar.
 
 ## Why t distributed?
-SNE faces the Crowding problem wherein there is lesser area in the two-dimensional map to accommodate the from the higher dimensional map which results in a mismatch in the neighbourhoods between the two.
+SNE faces the Crowding problem wherein there is lesser area in the two-dimensional map to accommodate the points from the higher dimensional map which results in a mismatch in the neighbourhoods between the two.
 
 That is, even if a set of points are uniformly spaced in 10 dimensions, they tend to be more far away than actual when represented in 2 dimensions.
 
