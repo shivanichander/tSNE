@@ -57,3 +57,5 @@ For larger datasets like [MNIST’s Handwritten digits](http://yann.lecun.com/exdb
 
 For **DataByte**
 By **Shivani Chander**
+
+Mentored by [Pragyaditya Das](https://github.com/Jeet1994)
