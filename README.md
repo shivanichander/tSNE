@@ -27,7 +27,7 @@ The paper gives a beautiful analogy of the gradient to be similar to the resulta
 So, SNE achieves equilibrium of the springs by attracting two map points if they are far apart while their data points are close and repelling if they are nearby while their corresponding data points are dissimilar.
 
 ## Why t distributed?
-SNE faces the Crowding problem wherein there is lesser area in the two-dimensional map to accommodate the points from the higher dimensional map which results in a mismatch in the neighbourhoods between the two.
+SNE faces the Crowding problem wherein there is lesser area in the two-dimensional map to accommodate the points from the higher dimensional space which results in a mismatch in the neighbourhoods between the two.
 
 That is, even if a set of points are uniformly spaced in 10 dimensions, they tend to be more far away than actual when represented in 2 dimensions.
 
